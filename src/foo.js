@@ -22,7 +22,18 @@ class InsertImage extends Plugin {
       });
 
       view.on("execute", () => {
-        const imageURL = prompt(t("Image URL"));
+        const imageUrl = prompt(t("Image URL"));
+
+        editor.model.change((writer) => {
+          const imageElement = writer.createElement("image", {
+            src: imageUrl,
+          });
+
+          editor.model.insertContent(
+            imageElement,
+            editor.model.document.selection
+          );
+        });
       });
 
       return view;
