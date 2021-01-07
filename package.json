@@ -1,0 +1,24 @@
+{
+  "name": "ckeditor5-foo-plugin",
+  "version": "1.0.0",
+  "description": "Test ckeditor5 plugin",
+  "main": "src/foo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelGoncalves8/ckeditor5-foo-plugin.git"
+  },
+  "author": "rafael gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelGoncalves8/ckeditor5-foo-plugin/issues"
+  },
+  "homepage": "https://github.com/RafaelGoncalves8/ckeditor5-foo-plugin#readme",
+  "dependencies": {
+    "@ckeditor/ckeditor5-core": "^24.0.0",
+    "@ckeditor/ckeditor5-image": "^24.0.0",
+    "@ckeditor/ckeditor5-ui": "^24.0.0"
+  }
+}
