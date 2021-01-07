@@ -7,7 +7,7 @@ import Image from "@ckeditor/ckeditor5-image/src/image";
 import InsertImage from "./src/foo";
 
 ClassicEditor.create(document.querySelector("#editor"), {
-  plugins: [Essentials, Paragraph, Bold, Italic, Image, insertImage],
+  plugins: [Essentials, Paragraph, Bold, Italic, Image, InsertImage],
   toolbar: ["bold", "italic", "insertImage"],
 })
   .then((editor) => {

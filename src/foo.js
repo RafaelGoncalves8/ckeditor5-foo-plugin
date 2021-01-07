@@ -1,5 +1,5 @@
 import imageIcon from "@ckeditor/ckeditor5-core/theme/icons/image.svg";
-import ButtonView from "@ckeditor/ckeditor5-core/theme/icons/image.svg";
+import ButtonView from "@ckeditor/ckeditor5-ui/src/button/buttonview";
 import Plugin from "@ckeditor/ckeditor5-core/src/plugin";
 
 class InsertImage extends Plugin {
@@ -7,18 +7,22 @@ class InsertImage extends Plugin {
     console.log("InsertImage was initialized");
 
     const editor = this.editor;
+    const {
+      t,
+      ui: { componentFactory },
+    } = editor;
 
-    editor.ui.componentFactory.add("insertImage", (locale) => {
+    componentFactory.add("insertImage", (locale) => {
       const view = new ButtonView(locale);
 
       view.set({
-        label: "Insert Image",
+        label: t("Insert Image"),
         icon: imageIcon,
         tooltip: true,
       });
 
       view.on("execute", () => {
-        const imageURL = prompt("Image URL");
+        const imageURL = prompt(t("Image URL"));
       });
 
       return view;
