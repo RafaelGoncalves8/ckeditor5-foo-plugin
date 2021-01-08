@@ -12,7 +12,7 @@ class InsertImage extends Plugin {
       ui: { componentFactory },
     } = editor;
 
-    componentFactory.add("insertImage", (locale) => {
+    componentFactory.add("insertImage_", (locale) => {
       const view = new ButtonView(locale);
 
       view.set({
