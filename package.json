@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-foo-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Test ckeditor5 plugin",
   "main": "src/foo.js",
   "scripts": {
